@@ -1,0 +1,12 @@
+/ {
+
+    sensors {
+        distance_sensor_0: hc-sr04-0 {
+            compatible = "elecfreaks,hc-sr04";
+            label = "HC-SR04_0";
+            trig-gpios = <&gpio1 24 GPIO_ACTIVE_HIGH>;
+            echo-gpios = <&gpio1 18 GPIO_ACTIVE_HIGH>;
+            status = "okay";
+        };
+    };
+ };
